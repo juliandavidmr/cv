@@ -1,0 +1,186 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{hanging}
+\usepackage{parskip}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Juli\'an David Mora Ramos}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {programming, code, mathematics},
+  pdftitle = {\name: CV: Juli\'an David Mora Ramos},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+	\href{http://www.udla.edu.co}{Universidad de la Amazonia} \\
+	Florencia, Caquet\'a. 180001\\
+	Instituci\'on educativa San Lorenzo \\
+	Suaza, Huila. 416080 \\
+ 
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Email: & \href{mailto:anlijudavid@hotmail.com}{\tt anlijudavid@hotmail.com} \\
+    P\'agina: & \href{https://juliandavidmr.github.io}{\tt https://juliandavidmr.github.io} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Intereses de investigaci\'on}
+\begin{itemize}
+\item Me interesan las nuevas tecnolog\'ias, software, temas de actualidad, educaci\'on, open source. Me motiva aprender de todo un poco, y me apasiona adquirir nuevos conocimientos para ayudar a los dem\'as.
+\end{itemize} 
+
+\section*{Educaci\'on}
+
+\begin{itemize}
+  \item Ing. Ingenier\'ia de sistemas. Facultad de Ingenier\'ia. Universidad de la Amazonia, 2012 -- actualidad.
+  
+	  \leftskip 0.5in
+	  \parindent -0.5in
+	  \subitem Tesis: \href{https://github.com/juliandavidmr/Grado}{\emph{Integraci\'on de servicios virtuales: una alternativa para la gesti\'on de ambientes de aprendizaje en la modalidad de Educaci\'on a distancia de la Universidad de la Amazonia}}. \textit{(En proceso)} 2017 -- actualidad.
+
+  \leftskip 0in
+  \item Tec. T\'ecnico en mantenimiento y reparaci\'on de equipos de audio y video. T\'ecnica en Electr\'onica. Servicio Nacional de Aprendizaje SENA, 2010 -- 2011.
+  
+  \item Diplomados/Certificados:
+  
+  	  \leftskip 0.5in
+	  \subitem Ergonom\'ia en los ambientes de trabajo. SENA. 2010.
+	  \subitem T\'ecnicas de dise\~no y construcci\'on de circuitos electr\'onicos impresos PCB. SENA. 2011.
+	  \subitem Estructura del lenguaje de programaci\'on C++ (Nivel I). SENA. 2012.
+	  \subitem Variables y estructuras de control en la programaci\'on orientada a objetos: JAVA. SENA. 2012.
+  
+\end{itemize}
+
+\section*{Investigaciones}
+\begin{itemize}
+	\item {\bf Proyectos actuales}
+	
+	\leftskip 0.5in
+	\parindent -0.5in
+	\subitem Toc app. Aplicaci\'on m\'ovil h\'ibrida para la comunidad estudiantil y administrativa del Departamento de Educaci\'on a Distancia (2017 -- actualidad)
+	\subitem Sistema de transferencia de datos entre el sistema misional Chair\'a (Universidad de la Amazonia) y el LMS Moodle (Departamento de Educaci\'on a Distancia) (2017 -- 2018)
+	
+	
+	\leftskip 0in
+	\item {\bf Otros proyectos}
+	
+	\leftskip 0.5in
+	\parindent -0.5in
+	\subitem RP. Parser de lenguaje de programaci\'on. Abstracci\'on del lenguaje de programaci\'on php. Sintaxis limpia, libre de elementos repetitivos de PHP, incluido el soporte para muchas funciones php y segmentos que lo ayudan a crear archivos con menos contenido de c\'odigo.(2007 -- actualidad)
+	\\ \\
+	\subitem Open source: 20 paquetes de NodeJS publicadas en npm en los que se destacan:
+
+	\leftskip 1in
+	\parindent -0.5in
+	\subitem sails-inverse-model: Generador de archivos para creacion de CRUD en SailsJS. \textit{(6,097 descargas)}
+	\subitem vue-frame: Creaci\'on de interfaces con iframes en VueJS \textit{(3,191 descargas)}
+	\subitem ionis: Herramienta para ayudar en la certificación de aplicaciones m\'oviles h\'ibridas de Ionic Framework v2. \textit{(522 descargas)}
+	\subitem sylver: paquete liviano para operaciones matem\'aticas complejas \textit{(293 descargas)}
+\end{itemize}
+
+
+\section*{Skills}
+\begin{itemize}
+\item {\bf Programaci\'on}
+\subitem Javascript, JAVA, C\#, PHP, Python, C++, Kotlin, Dart, PLSQL, Shell, Tex, TypeScript, Golang.
+
+\item {\bf Herramientas y librer\'ias}
+\subitem Frontend: Angular \textit{(Todas las versiones, tambi\'en Ionic Framework)}, VueJS, ReactJS \textit{(Incluyendo contenedores de control de estado, como Redux)}.
+\subitem Backend: NodeJS \textit{(SailsJS, MeteorJS, ExpressJS, NestJS, KoaJS)}, ASP.NET (C\#),  bases de datos relacionales \textit{(MySQL, PostgreSQL, Oracle)}, bases de datos no relacionales \textit{(MongoDB, Neo4j)}
+
+\item {\bf Methods}
+
+\leftskip 0.5in
+\parindent -0.5in
+
+\subitem MIT Classes: Calculus (I\&II), Differential Equations, Quantitative Research Methods (I\&II), Introduction to Computer Science (Python) 
+\subitem{Harvard Classes: Topics in Quantitative Methods (Gov 2002), Advanced Quantitative Research Methodology (Gov 2001)}
+
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+
+\end{document}
